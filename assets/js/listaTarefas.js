@@ -52,14 +52,6 @@ document.addEventListener('click', function(e) {
     }
 });
 
- let btnConcluir = document.createElement("button");
-    btnConcluir.textContent = "CONCLUIR";
-    btnConcluir.addEventListener("click", function () {
-        item.classList.toggle("concluida");
-        item.removeChild(btnConcluir);
-        item.removeChild(btnRemover);
-    });
-
 function salvarTarefas() {
     const liTarefas = tarefas.querySelectorAll('li');
     const listaDeTarefas = [];
